@@ -1,5 +1,9 @@
 .thumblain-picture {
   width: 100%;
+  border-radius: 10px;
+}
+.thumblain-picture:hover {
+  border-radius: 0;
 }
 .video-discription {
   display: grid;
@@ -42,5 +46,20 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
   row-gap: 20px;
-  background-color: rgb(231, 229, 229);
+  margin-top: 70px;
+}
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 751px) and (min-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

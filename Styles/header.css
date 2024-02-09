@@ -1,12 +1,17 @@
 .header {
   display: flex;
-  height: 50px;
+  height: 60px;
   border-bottom: 1px solid rgb(197, 194, 194);
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+  justify-content: space-between;
 }
+
 .left-section {
-  /* background-color: lightblue; */
   width: 300px;
   display: flex;
   align-items: center;
@@ -35,6 +40,7 @@
   border-bottom-left-radius: 20px;
   border: 1px solid rgb(199, 197, 197);
   padding-left: 20px;
+  width: 0;
 }
 .search-bar::placeholder {
   font-size: 15px;
@@ -88,9 +94,10 @@
   position: absolute;
   top: 2px;
   left: 12px;
-  padding: 2px 5px;
+  padding: 2px 3px;
   background-color: rgb(211, 5, 5);
   border-radius: 10px;
   color: white;
   font-size: 11px;
+  font-weight: 500;
 }
